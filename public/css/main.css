@@ -1,0 +1,694 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+h2, h3 {
+  padding-top: 15px; }
+
+/**
+ * Basic styling
+ */
+body {
+  font: 400 18px/1.5 Georgia, serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+
+/**
+ * Aanpassing voor 1200px-brede wrapper, zodat foto's breed kunnen
+ */
+h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, .col-wrapper {
+  max-width: 680px;
+  margin: 0 auto; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 15px; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure {
+  position: relative;
+  padding: 35px 0 40px;
+  overflow: hidden; }
+
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 15.75px; }
+
+figure.align-left {
+  float: left;
+  margin: 20px 20px 20px 0; }
+
+figure.align-right {
+  float: right;
+  margin: 20px 0 20px 20px; }
+
+figure.align-center > img {
+  margin: 0 auto; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  /* text-transform: uppercase; */ }
+
+/**
+ * Links
+ */
+a {
+  color: #005CB3;
+  text-decoration: none; }
+  a:visited {
+    color: #005CB3;
+    /* color: darken($brand-color, 15%); */ }
+  a:hover {
+    color: #111;
+    text-decoration: underline; }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #828282;
+  padding-left: 45px;
+  padding-right: 60px;
+  max-width: 575px;
+  font-size: 18px;
+  /* letter-spacing: -1px; */
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(1200px - (30px * 2));
+  max-width: calc(1200px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(1200px - (30px));
+      max-width: calc(1200px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Clearfix
+ */
+.wrapper:after, .footer-col-wrapper:after, .col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 5px solid #5c5c5c;
+  border-bottom: 10px solid #9ACC46;
+  min-height: 56px;
+  margin-bottom: 15px;
+  position: relative; }
+  @media screen and (max-width: 600px) {
+    .site-header {
+      border-bottom-width: 0px; } }
+
+.site-title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -1px;
+  display: block;
+  margin-top: 15px;
+  padding: 20px 0 30px 0; }
+  .site-title img {
+    display: block;
+    margin: 0 auto; }
+  .site-title, .site-title:visited {
+    color: #5c5c5c; }
+
+/**
+ * Site footer
+ */
+.site-footer {
+  padding: 30px 0;
+  border-top: 6px solid #9ACC46; }
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #828282;
+  margin: 0 auto; }
+
+.footer-col {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+
+.footer-col-1 {
+  width: -webkit-calc(40% - (30px / 2));
+  width: calc(40% - (30px / 2)); }
+  .footer-col-1 p:first-child {
+    margin-bottom: 0; }
+
+.footer-col-2 {
+  width: -webkit-calc(35% - (30px / 2));
+  width: calc(35% - (30px / 2)); }
+
+.footer-col-3 {
+  width: -webkit-calc(22% - (30px / 2));
+  width: calc(22% - (30px / 2)); }
+
+.footer-nav li {
+  list-style-type: none; }
+
+@media screen and (max-width: 800px) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(43% - (30px / 2));
+    width: calc(43% - (30px / 2));
+    padding-left: 7%; }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2));
+    padding-left: 0;
+    border-top: 2px solid #e8e8e8;
+    padding-top: 30px; }
+
+  .footer-nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+
+  .footer-nav ul {
+    margin-left: 0; }
+
+  .footer-nav li {
+    display: inline-block;
+    padding: 0 5%; } }
+  @media screen and (max-width: 800px) and (max-width: 800px) {
+    .footer-nav li {
+      padding: 1.5% 5%; } }
+
+@media screen and (max-width: 600px) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2)); }
+
+  .footer-col-3 {
+    padding-left: 7%;
+    border-top-width: 0; }
+
+  .footer-nav {
+    text-align: left; }
+
+  .footer-nav li {
+    display: block;
+    padding: 0; } }
+/**
+ * Page content
+ */
+.page-heading {
+  font-size: 20px; }
+
+.post-list {
+  margin-left: 0;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: 30px; }
+
+.post-meta {
+  font-size: 15.75px;
+  color: #828282; }
+
+.post-link {
+  display: block;
+  font-size: 24px; }
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: 30px; }
+
+.post-title {
+  font-size: 42px;
+  line-height: 1;
+  text-align: center;
+  padding: 60px 0 30px 0; }
+  @media screen and (max-width: 800px) {
+    .post-title {
+      font-size: 36px; } }
+
+.post-content {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 6px solid #9ACC46; }
+  .post-content h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 800px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+
+/**
+ * Homepage
+ */
+.home-widget {
+  padding-bottom: 30px;
+  clear: both;
+  /* margin-bottom: $spacing-unit; */ }
+
+.home-heading {
+  font-size: 48px;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  max-width: 1200px;
+  background-color: #9ACC46;
+  color: #fff;
+  margin-bottom: 60px; }
+  @media screen and (max-width: 600px) {
+    .home-heading {
+      font-size: 24px;
+      padding: 15px 0 15px 0;
+      font-weight: 700; } }
+
+/**
+* Homepage grote foto
+*/
+#main-image-fig {
+  position: relative; }
+  @media screen and (max-width: 520px) {
+    #main-image-fig {
+      height: 450px; } }
+  @media screen and (max-width: 400px) {
+    #main-image-fig {
+      height: 350px; } }
+  #main-image-fig p {
+    position: absolute;
+    bottom: 55px;
+    left: 27%;
+    color: #fff;
+    font-family: Oxygen, sans-serif;
+    font-size: 75px;
+    font-weight: 300; }
+    @media screen and (max-width: 800px) {
+      #main-image-fig p {
+        left: 14%; } }
+    @media screen and (max-width: 520px) {
+      #main-image-fig p {
+        font-size: 60px;
+        bottom: 25px; } }
+    @media screen and (max-width: 400px) {
+      #main-image-fig p {
+        font-size: 48px;
+        bottom: 10px;
+        left: 10%; } }
+
+/*houd image gecentreerd als de container smaller wordt */
+div.main-image-outer {
+  width: 100%;
+  /* some width amount needed */
+  margin: 0 auto;
+  overflow: visible; }
+
+div.main-image-inner {
+  position: relative;
+  float: right;
+  /* this was added and display removed */
+  right: 50%; }
+
+div.main-image-inner img {
+  max-width: 1200px;
+  position: relative;
+  right: -50%;
+  /* this was changed from "left" in original */ }
+  @media screen and (max-width: 520px) {
+    div.main-image-inner img {
+      top: -75px; } }
+  @media screen and (max-width: 400px) {
+    div.main-image-inner img {
+      top: -110px; } }
+
+/**
+ * Three column layout Diensten
+ */
+.col-container {
+  clear: both;
+  overflow: hidden;
+  /*om ondanks floats toch hoogte te geven, voor mogelijke background-color */ }
+
+.col-home {
+  width: 28.33%;
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 39.9px; }
+  @media screen and (max-width: 990px) {
+    .col-home {
+      width: 720px;
+      margin: 0 auto 39.9px;
+      float: none; }
+      .col-home:not(:nth-child(2)) {
+        /* 1e kolom = 2e kind (heading = 1e kind) */
+        border-top: 3px solid #005CB3; } }
+  @media screen and (max-width: 800px) {
+    .col-home {
+      width: 90%;
+      padding: 5%; } }
+
+.col-wrapper h4 {
+  padding: 0px 18px;
+  background-color: #e8e8e8; }
+
+.home-col-heading {
+  text-align: center; }
+
+/**
+* Diensten icons
+*/
+.icon-div {
+  margin: 0 auto;
+  text-align: center; }
+
+.icon {
+  color: #005CB3;
+  font-size: 50px !important;
+  width: 70px;
+  height: 70px;
+  border: solid 0px #005CB3;
+  text-align: center;
+  display: inline-block;
+  cursor: default; }
+  .icon.icon-left {
+    margin: 15px 30px 30px 0;
+    float: left; }
+
+/**
+* Collapsable content
+*/
+.panelcontent {
+  overflow: hidden; }
+
+.panelcollapsed .panelcontent {
+  display: none; }
+
+.panelbutton-div {
+  text-align: center; }
+
+.panelbutton {
+  display: none;
+  margin: 0 auto;
+  width: 120px;
+  padding: 5px 0;
+  background-color: #005CB3;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Oxygen, sans-serif;
+  font-weight: 300;
+  font-size: 15px; }
+  .panelbutton:hover {
+    color: #fff;
+    background-color: #1a90ff;
+    text-decoration: none;
+    cursor: pointer; }
+  .panelbutton.icon {
+    height: 23px; }
+  .panelbutton.ion-ios-arrow-up::before {
+    position: relative;
+    top: -31px;
+    font-size: 40px; }
+
+/**
+ * Two column layout Team
+ */
+.col-wrapper {
+  margin: 0 auto; }
+
+.col {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+
+.col-1 {
+  width: -webkit-calc(35% - (30px / 2));
+  width: calc(35% - (30px / 2)); }
+  .col-1 p:first-child {
+    margin-bottom: 0; }
+
+.col-2 {
+  width: -webkit-calc(40% - (30px / 2));
+  width: calc(40% - (30px / 2)); }
+
+@media screen and (max-width: 600px) {
+  .col {
+    float: none;
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2)); }
+
+  .teamfoto {
+    width: 110px; } }
+/**
+* Keyframes (links naar backgroundimages staan in slider.css)
+*/
+.klant-slider {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1100px; }
+  @media screen and (max-width: 820px) {
+    .klant-slider {
+      max-width: 650px; } }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  18% {
+    opacity: 1; }
+  22% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes fade {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  18% {
+    opacity: 1; }
+  22% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes fade {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  18% {
+    opacity: 1; }
+  22% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  18% {
+    opacity: 1; }
+  22% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+div.kf-slider {
+  width: 210px;
+  height: 210px;
+  display: inline-block;
+  margin: 20px 35px;
+  position: relative; }
+  @media screen and (max-width: 1000px) {
+    div.kf-slider {
+      width: 180px;
+      height: 180px; } }
+  @media screen and (max-width: 820px) {
+    div.kf-slider {
+      width: 140px;
+      height: 140px; } }
+  @media screen and (max-width: 720px) {
+    div.kf-slider {
+      margin: 0 35px; } }
+  @media screen and (max-width: 460px) {
+    div.kf-slider {
+      margin: 0 10px; } }
+  div.kf-slider div {
+    height: 210px;
+    width: 210px;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    /* background-position: $frame-size; */
+    background-size: 100%;
+    opacity: 0;
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: fade 15s infinite;
+    -moz-animation: fade 15s infinite;
+    -o-animation: fade 15s infinite;
+    animation: fade 15s infinite; }
+    @media screen and (max-width: 1000px) {
+      div.kf-slider div {
+        width: 180px;
+        height: 180px; } }
+    @media screen and (max-width: 820px) {
+      div.kf-slider div {
+        width: 140px;
+        height: 140px; } }
+  div.kf-slider > div:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s; }
+  div.kf-slider > div:nth-child(2) {
+    -webkit-animation-delay: -2.5s;
+    -moz-animation-delay: -2.5s;
+    -ms-animation-delay: -2.5s;
+    animation-delay: -2.5s; }
+  div.kf-slider > div:nth-child(3) {
+    -webkit-animation-delay: -5s;
+    -moz-animation-delay: -5s;
+    -ms-animation-delay: -5s;
+    animation-delay: -5s; }
+  div.kf-slider > div:nth-child(4) {
+    -webkit-animation-delay: -7.5s;
+    -moz-animation-delay: -7.5s;
+    -ms-animation-delay: -7.5s;
+    animation-delay: -7.5s; }
+  div.kf-slider > div:nth-child(5) {
+    -webkit-animation-delay: -10s;
+    -moz-animation-delay: -10s;
+    -ms-animation-delay: -10s;
+    animation-delay: -10s; }
+  div.kf-slider > div:nth-child(6) {
+    -webkit-animation-delay: -12.5s;
+    -moz-animation-delay: -12.5s;
+    -ms-animation-delay: -12.5s;
+    animation-delay: -12.5s; }
+
+/* De li-elementen met link naar achtergrondafbeelding staan in apart css-bestand,
+omdat daarin YAML-variable {{site.github.url}} kan. Dit kan niet in scss-bestand. */
+/**
+* Rest
+*/
+#contact-widget {
+  text-align: center; }
+  #contact-widget h3 {
+    padding-top: 0; }
+
+.foto-credits {
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 30px;
+  /* margin-top: $spacing-unit * 0.33; */
+  /* padding-top: 5px; */
+  display: inline-block;
+  /*border-top: solid $grey-color-light 1px;*/ }
+  @media screen and (max-width: 600px) {
+    .foto-credits {
+      margin-left: 0; } }
+
+/* voor leaflet-kaart */
+.kaart-wrapper {
+  text-align: center; }
+
+#kaartcontainer {
+  width: 75%;
+  max-width: 680px;
+  margin: 20px auto 20px;
+  height: 450px; }
+  @media screen and (max-width: 800px) {
+    #kaartcontainer {
+      height: 375px; } }
+  @media screen and (max-width: 600px) {
+    #kaartcontainer {
+      height: 300px; } }
+
+.button-startpositie {
+  float: left;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.65);
+  border-radius: 4px;
+  background-color: #fff; }
+
+.button-startpositie a {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px; }
+
+.button-startpositie a:hover {
+  text-decoration: underline; }
+
+.button-startpositie.disabled a {
+  color: #ccc; }
+
+.button-startpositie.disabled a:hover {
+  text-decoration: none;
+  cursor: default; }
