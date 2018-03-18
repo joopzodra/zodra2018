@@ -1,5 +1,0 @@
-{
-    "packages": [
-        "nlmaps", "leaflet", "openlayers", "googlemaps", "geolocator"
-    ]
-}

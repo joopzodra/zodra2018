@@ -88,9 +88,8 @@ function animateStep(panelcontent, iteration, stepHeight, direction) {
 //////////// Map
 function draw_map() {
 
-    // Create map
     let map = L.map('kaartcontainer').setView(new L.LatLng(51.96152, 5.65208), 10);
-    let mylayer = nlmaps.leaflet.bgLayer('standaard').addTo(map);
+    let mylayer = L.nlmapsBgLayer('standaard').addTo(map);
 
     L.marker([51.96152, 5.65208]).addTo(map)
         .bindPopup('Zodra<br>Nude 60<br>6702DN Wageningen');
